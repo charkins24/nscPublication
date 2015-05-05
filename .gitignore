@@ -1,0 +1,8 @@
+.Rproj.user
+.Rhistory
+.RData
+packrat/lib*/
+.csv
+.xls
+.xlsx
+.pdf
