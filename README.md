@@ -7,11 +7,11 @@ From the NSC's website:
 >The last enrollment	status reported	for	the	student:
 >
 >F =	Full-time  
+>Q =  Three-quarter time  
 >H =	Half-time  
 >L =	Less than half-time  
->Q =	Three-quarter time  
->A =	Leave	of absence  
 >W =	Withdrawn  
+>A =  Leave	of absence  
 >D =	Deceased  
 >
 >This	field	will	be	blank	if	the	reporting	college	has	not defined	the	student’s	enrollment status	as directory information
