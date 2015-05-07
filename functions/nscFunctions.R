@@ -88,41 +88,6 @@ nscEnrollFirstFall <-
     
   }
 
-nsc.enroll.status <-
-  list(
-    F = list(
-      status = 'Full-time',
-      priority = 5
-      ),
-    H = list(
-      status = 'Half-time',
-      priority = 3
-      ),
-    L = list(
-      status = 'Less than half-time',
-      priority = 2
-      ),
-    Q = list(
-      status = 'Three-quarter time',
-      priority = 4
-      ),
-    A = list(
-      status = 'Leave of absence',
-      priority = 0
-      ),
-    W = list(
-      status = 'Withdrawn',
-      priority = 1
-      ),
-    D = list(
-      status = 'Deceased',
-      priority = 1
-      ),
-    unk = list(
-      status = NA,
-      priority = 0)
-    )
-
 
 
 #### Count of Students Enrolled in College the Fall Immediately Following Graduation From High School #### 
