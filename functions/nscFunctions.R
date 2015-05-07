@@ -140,35 +140,3 @@ nsc.working <-
     , sem_fall = ENROLLMENT_BEGIN >= as.Date(paste0(format(ENROLLMENT_BEGIN, '%Y'), '-08-15'), '%Y-%m-%d') & format(ENROLLMENT_BEGIN, '%m') < 11
     , sem_first_fall = format(ENROLLMENT_BEGIN, '%Y') == format(HIGH_SCHOOL_GRAD_DATE, '%Y') & sem_fall
     )
-
-z <-
-  nsc.working %>%
-  group_by(YOUR_UNIQUE_IDENTIFIER) %>%
-  summarize(
-    )
-
-nsc.fall.enroll.immed <-
-  nsc.working %>%
-  group_by(YOUR_UNIQUE_IDENTIFIER) %>%
-  summarize(
-    hs_class = format(max(HIGH_SCHOOL_GRAD_DATE), '%Y')
-    , enroll_first_fall = sum(sem_first_fall, na.rm = TRUE) >= 1
-    ) %>%
-  ungroup()
-
-nsc.working.2 <-
-  nsc.working %>% 
-    filter(
-      sem_first_fall == TRUE
-      ) #%>%
-#     group_by(YOUR_UNIQUE_IDENTIFIER) %>%
-#     filter(
-# #       ENROLLMENT_BEGIN == min(ENROLLMENT_BEGIN)
-# #       , nsc.enroll.status[[ENROLLMENT_STATUS]][['priority']] == max(nsc.enroll.status[[ENROLLMENT_STATUS]][['priority']])
-#       ) %>%
-#     ungroup(),
-  )
-
-####
-
-nsc$ENROLLMENT_BEGIN[1] >= as.Date('2012-08-15')
